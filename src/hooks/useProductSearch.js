@@ -1,42 +1,33 @@
 import { useState, useEffect } from 'react';
 
-// TODO: Exercice 3.1 - Créer le hook useDebounce
-// TODO: Exercice 3.2 - Créer le hook useLocalStorage
-
 const useProductSearch = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  // TODO: Exercice 4.2 - Ajouter l'état pour la pagination
+    const [products, setProducts] = useState([]); // État pour stocker les produits
+    const [loading, setLoading] = useState(true); // État pour indiquer si les données sont en cours de chargement
+    const [error, setError] = useState(null); // État pour gérer les erreurs
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        // TODO: Exercice 4.2 - Modifier l'URL pour inclure les paramètres de pagination
-        const response = await fetch('https://api.daaif.net/products?delay=1000');
-        if (!response.ok) throw new Error('Erreur réseau');
-        const data = await response.json();
-        setProducts(data.products);
-        setLoading(false);
-      } catch (err) {
-        setError(err.message);
-        setLoading(false);
-      }
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch('https://jsonplaceholder.typicode.com/posts'); // API pour récupérer les produits
+                if (!response.ok) throw new Error('Erreur réseau');
+                const data = await response.json();
+                console.log("Données reçues de l'API:", data); // Vérifiez les données reçues
+                setProducts(data); // Mettez à jour l'état avec les données
+                setLoading(false); // Indique que le chargement est terminé
+            } catch (err) {
+                setError(err.message); // Enregistre l'erreur
+                setLoading(false); // Indique que le chargement est terminé même en cas d'erreur
+            }
+        };
+
+        fetchProducts(); // Appel de la fonction pour récupérer les produits
+    }, []); // Le tableau vide signifie que cela ne s'exécute qu'une seule fois lors du montage du composant
+
+    return { 
+        products, 
+        loading, 
+        error,
     };
-
-    fetchProducts();
-  }, []); // TODO: Exercice 4.2 - Ajouter les dépendances pour la pagination
-
-  // TODO: Exercice 4.1 - Ajouter la fonction de rechargement
-  // TODO: Exercice 4.2 - Ajouter les fonctions pour la pagination
-
-  return { 
-    products, 
-    loading, 
-    error,
-    // TODO: Exercice 4.1 - Retourner la fonction de rechargement
-    // TODO: Exercice 4.2 - Retourner les fonctions et états de pagination
-  };
 };
 
 export default useProductSearch;
