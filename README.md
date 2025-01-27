@@ -51,7 +51,7 @@ Pour chaque exercice :
 - [ ] 1.2 Implémenter le debounce sur la recherche
 - [ ] 1.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 1 :_
+ réponse pour l'exercice 1 :_
 
 Modification du composant ProductSearch pour utiliser la recherche :
 j'ai créé un composant ProductSearch qui permet aux utilisateurs de saisir un terme de recherche. Ce composant utilise un état local pour gérer le terme de recherche saisi par l'utilisateur.
@@ -70,9 +70,9 @@ j'ai introduit un hook personnalisé useDebounce, qui retarde la mise à jour du
 - [ ] 2.2 Ajouter le sélecteur de langue
 - [ ] 2.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 2 :_
+ réponse pour l'exercice 2 :_
 `Création du LanguageContext :
-j'ai créé un LanguageContext pour gérer les préférences de langue au sein de votre application. Cela permet de centraliser la gestion de la langue et de faciliter l'internationalisation.
+j'ai créé un LanguageContext pour gérer les préférences de langue au sein de l'application. Cela permet de centraliser la gestion de la langue et de faciliter l'internationalisation.
 ![Capture d'écran 4](captures/react2.1.png)
 Ajout du sélecteur de langue :
 Un sélecteur de langue a été ajouté dans le composant App, permettant aux utilisateurs de choisir entre le français et l'anglais. Lorsque l'utilisateur change la langue, l'état est mis à jour en conséquence.
@@ -86,7 +86,7 @@ Un sélecteur de langue a été ajouté dans le composant App, permettant aux ut
 - [ ] 3.2 Créer le hook useLocalStorage
 - [ ] 3.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 3 :_
+réponse pour l'exercice 3 :_
 Création du hook useDebounce :
 j'ai créé le hook useDebounce, qui permet de gérer le délai avant de mettre à jour une valeur. Ce hook est utilisé dans le composant ProductSearch pour améliorer la recherche en temps réel.
 Création du hook useLocalStorage :
@@ -94,17 +94,17 @@ j'ai également créé le hook useLocalStorage, qui permet de stocker et de réc
 ![Capture d'écran 6](captures/react3.1.png)
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
-#### Objectif : Gérer le chargement et la pagination
+ ### Objectif : Gérer le chargement et la pagination
 
 - [ ] 4.1 Ajouter le bouton de rechargement
 - [ ] 4.2 Implémenter la pagination
 - [ ] 4.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 4 :_
-```
-4.1 Ajouter le bouton de rechargement : Vous avez ajouté un bouton de rechargement pour permettre aux utilisateurs de recharger les produits.
+ réponse pour l'exercice 4 :_
+
+4.1 Ajouter le bouton de rechargement :j'ai ajouté un bouton de rechargement pour permettre aux utilisateurs de recharger les produits.
 ![Capture d'écran 7](captures/react4.1.png)
-``4.2 j'ai mis en place un mécanisme de pagination pour afficher un nombre limité de produits par page. Cela améliore la navigation dans la liste des produits, surtout si vous avez un grand nombre d'articles à afficher.
+``4.2 j'ai mis en place un mécanisme de pagination pour afficher un nombre limité de produits par page. Cela améliore la navigation dans la liste des produits, surtout si on a un grand nombre d'articles à afficher.
 ![Capture d'écran 8](captures/react4.2.png)
 
 ## Rendu
@@ -115,7 +115,3 @@ _Votre réponse pour l'exercice 4 :_
 ![Capture d'écran ](captures/react9.png)
 ![Capture d'écran ](captures/react10.png)
 ![Capture d'écran ](captures/react11.png)
-- Ajoutez l'URL de votre dépôt Github dans  **Classroom** et envoyer la réponse dès le démarage de votre projet.
-- Les push doivent se faire au fûr et à mesure que vous avancez dans votre projet.
-- Le README.md doit être à jour avec vos réponses et captures d'écran. 
-- Chaques exercice doit faire l'objet d'au moins un commit avec un message mentionnant le numéro de l'exercice.
