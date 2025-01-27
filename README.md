@@ -108,7 +108,13 @@ _Votre réponse pour l'exercice 4 :_
 ![Capture d'écran 8](captures/react4.2.png)
 
 ## Rendu
-
+![Capture d'écran ](captures/react5.png)
+![Capture d'écran ](captures/react6.png)
+![Capture d'écran ](captures/react7.png)
+![Capture d'écran ](captures/react8.png)
+![Capture d'écran ](captures/react9.png)
+![Capture d'écran ](captures/react10.png)
+![Capture d'écran ](captures/react11.png)
 - Ajoutez l'URL de votre dépôt Github dans  **Classroom** et envoyer la réponse dès le démarage de votre projet.
 - Les push doivent se faire au fûr et à mesure que vous avancez dans votre projet.
 - Le README.md doit être à jour avec vos réponses et captures d'écran. 
